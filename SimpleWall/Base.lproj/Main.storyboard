@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tFS-QQ-NGR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Flow-->
+        <scene sceneID="rhK-zd-TRD">
+            <objects>
+                <collectionViewController id="gg5-Lw-Q9s" customClass="SWFlowViewController" customModule="SimpleWall" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1LX-p4-zWI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="GPa-n6-bfY">
+                            <size key="itemSize" width="187" height="187"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="WUz-CD-6XT" customClass="SWWallThumbCell" customModule="SimpleWall" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="187" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="187" height="187"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3eH-47-XEM">
+                                            <rect key="frame" x="0.0" y="0.0" width="187" height="187"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="3eH-47-XEM" firstAttribute="width" secondItem="WUz-CD-6XT" secondAttribute="width" id="6LS-LV-0Ce"/>
+                                    <constraint firstItem="3eH-47-XEM" firstAttribute="centerX" secondItem="WUz-CD-6XT" secondAttribute="centerX" id="BCQ-SC-wcI"/>
+                                    <constraint firstItem="3eH-47-XEM" firstAttribute="height" secondItem="WUz-CD-6XT" secondAttribute="height" id="KEi-9I-cTl"/>
+                                    <constraint firstItem="3eH-47-XEM" firstAttribute="centerY" secondItem="WUz-CD-6XT" secondAttribute="centerY" id="ebO-at-wR2"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="thumb" destination="3eH-47-XEM" id="MHy-Ul-HXH"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="gg5-Lw-Q9s" id="XGJ-Ed-KMY"/>
+                            <outlet property="delegate" destination="gg5-Lw-Q9s" id="STV-hD-X7H"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Flow" id="e5E-K2-9tC"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BbD-7v-r8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1531.5" y="951.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eDa-FM-gn0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tFS-QQ-NGR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ICA-Dd-rnu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gg5-Lw-Q9s" kind="relationship" relationship="rootViewController" id="yPi-EJ-mak"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8o4-6v-HJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="952"/>
+        </scene>
+    </scenes>
+</document>
