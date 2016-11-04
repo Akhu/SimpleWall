@@ -2,7 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>unsplash</key>
+	<dict>
+		<key>client-ID</key>
+		<string>Client-ID c8a9d3325a06bfc8503ac47a3319a5c71f3ca9a713107c7ceb092d163643468c</string>
+		<key>secret</key>
+		<string>7934fbcb943e0d9f6b2d898561b1a550057075e7d5381e44cfd6eb88825c0dd9</string>
+	</dict>
 	<key>api</key>
-	<string>https://unsplash.it</string>
+	<string>https://api.unsplash.com</string>
 </dict>
 </plist>

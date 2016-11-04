@@ -8,12 +8,10 @@ use_frameworks!
 pod 'SWFrameButton'
 pod 'NVActivityIndicatorView'
 pod 'EasyAnimation'
-pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
-pod 'Firebase'
+pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
 
-pod 'Alamofire', '~> 3.0'
-pod 'CWStatusBarNotification', '~> 2.3.4'
-pod 'ReachabilitySwift', :git => 'https://github.com/ashleymills/Reachability.swift'
+pod 'Alamofire', '~> 4.0'
+#pod 'ReachabilitySwift', :git => 'https://github.com/ashleymills/Reachability.swift'
 pod 'SwiftyJSON'
 pod 'Nuke'
 pod 'Nuke-Alamofire-Plugin' # optional

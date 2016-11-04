@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWWallInfosView" customModule="SimpleWall" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lO2-3e-1hv">
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Wce-GO-9ev">
+                        <frame key="frameInset"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lE-yo-CPZ" userLabel="ISO">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4u-1L-5Aa" userLabel="Aperture">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd2-Dv-bc4" userLabel="Speed">
+                                <frame key="frameInset" minX="8" minY="75" width="178" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="N4u-1L-5Aa" firstAttribute="leading" secondItem="Wce-GO-9ev" secondAttribute="leading" constant="8" id="1Gz-xs-iSq"/>
+                            <constraint firstItem="N4u-1L-5Aa" firstAttribute="centerY" secondItem="Wce-GO-9ev" secondAttribute="centerY" id="Ghj-Es-5Zp"/>
+                            <constraint firstItem="3lE-yo-CPZ" firstAttribute="leading" secondItem="Wce-GO-9ev" secondAttribute="leading" constant="8" id="RTd-I9-ERv"/>
+                            <constraint firstItem="3lE-yo-CPZ" firstAttribute="top" secondItem="Wce-GO-9ev" secondAttribute="top" constant="8" id="dJj-H2-uFk"/>
+                            <constraint firstAttribute="bottom" secondItem="hd2-Dv-bc4" secondAttribute="bottom" constant="8" id="gf5-DM-nPh"/>
+                            <constraint firstItem="hd2-Dv-bc4" firstAttribute="leading" secondItem="Wce-GO-9ev" secondAttribute="leading" constant="8" id="xOg-u3-p1w"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lO2-3e-1hv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7xE-Mc-uwA"/>
+                <constraint firstItem="lO2-3e-1hv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Fen-Po-oN0"/>
+                <constraint firstItem="lO2-3e-1hv" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="ZFY-Jh-a7q"/>
+                <constraint firstItem="lO2-3e-1hv" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="zXw-xI-xpl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="267.5" y="-106.5"/>
+        </view>
+    </objects>
+</document>

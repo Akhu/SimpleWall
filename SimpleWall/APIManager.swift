@@ -9,39 +9,60 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
-import ReachabilitySwift
 
 class APIManager {
- 
+    
     let constantsPlist = PropertyListManager(file: "Constants")
     
-    let apiURL:NSURL!
+    let apiURL:URL!
+    let unsplashClientID:String!
+    let unsplashSecret:String!
+    
+    var headers:HTTPHeaders = HTTPHeaders()
     
     init(){
-        self.apiURL = NSURL(string: constantsPlist.getAPIUrl()!)
+        self.apiURL = URL(string: constantsPlist.getAPIUrl()!)
+        self.unsplashClientID = constantsPlist.getUnsplashClientID()!
+        self.unsplashSecret = constantsPlist.getUnsplashSecret()!
+        
+        self.headers = [
+            "Authorization" : self.unsplashClientID,
+        ]
+        
     }
     
-    func get(path: String,completion: (data:JSON?) -> Void ) {
-        let url = NSURL(string: path, relativeToURL: self.apiURL)
+    func get(_ path: String,parameters:Parameters?, completion: @escaping (_ data:JSON?) -> Void ) {
+        let url = URL(string: path, relativeTo: self.apiURL)
         var json:JSON?
-        //print(url?.absoluteString)
-        Alamofire.request(.GET, url!).validate().responseJSON { response in
-            switch response.result {
-            case .Success:
-                if let value = response.result.value {
-                    json = JSON(value)
-                    completion(data: json)
+        Alamofire.request(url!,parameters:parameters ,headers: self.headers)
+            .responseJSON { response in
+                switch response.result {
+                case .success :
+                    if let value = response.result.value {
+                        json = JSON(value)
+                        print(json)
+                        completion(json)
+                    }
+                    break
+                case .failure(let error):
+                    print(error)
+                    completion(nil)
+                    break
                 }
-            case .Failure(let error):
-                print(error)
-                completion(data: nil)
-            }
+                
         }
         
     }
     
-    func generateUrlForIdForSize(id: Int32, width: Int32, height: Int32) -> NSURL{
-        return NSURL(string: String(width)+"/"+String(height)+"?image="+String(id), relativeToURL: self.apiURL)!
+    
+    
+    func generateUrlForIdForSize(_ id: Int32, width: Int32, height: Int32) -> URL{
+        if width == height {
+            
+            print(URL(string: String(width)+"?image="+String(id), relativeTo: self.apiURL)!.absoluteString)
+            return URL(string: String(width)+"/"+String(height)+"?image="+String(id), relativeTo: self.apiURL)!
+        }
+        return URL(string: String(width)+"/"+String(height)+"?image="+String(id), relativeTo: self.apiURL)!
     }
-
+    
 }

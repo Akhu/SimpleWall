@@ -14,14 +14,38 @@ class PropertyListManager {
     internal var plistDictionnary: NSDictionary?
     
     init(file: String) {
-        if let path = NSBundle.mainBundle().pathForResource(file, ofType: "plist"){
+        if let path = Bundle.main.path(forResource: file, ofType: "plist"){
             plistDictionnary = NSDictionary(contentsOfFile: path);
         }
     }
-        
+    
+    func getUnsplashClientID() -> String? {
+        if let dict = self.plistDictionnary {
+            if let unsplashDict = dict.value(forKey: "unsplash"){
+                if let unsplashClientID = (unsplashDict as AnyObject).value(forKey: "client-ID"){
+                    return unsplashClientID as? String
+                }
+            }
+            return nil
+        }
+        return nil
+    }
+    
+    func getUnsplashSecret() -> String? {
+        if let dict = self.plistDictionnary {
+            if let unsplashDict = dict.value(forKey: "unsplash"){
+                if let unsplashSecret = (unsplashDict as AnyObject).value(forKey: "secret"){
+                    return unsplashSecret as? String
+                }
+            }
+            return nil
+        }
+        return nil
+    }
+    
     internal func getAPIUrl() -> String?{
         if let dict = self.plistDictionnary {
-            if let appID = dict.valueForKey("api"){
+            if let appID = dict.value(forKey: "api"){
                 return appID as? String
             }
             return nil

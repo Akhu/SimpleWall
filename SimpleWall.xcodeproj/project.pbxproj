@@ -16,12 +16,18 @@
 		9259921D1D060AEC00EDCBF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9259921B1D060AEC00EDCBF1 /* LaunchScreen.storyboard */; };
 		925992281D060AEC00EDCBF1 /* SimpleWallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925992271D060AEC00EDCBF1 /* SimpleWallTests.swift */; };
 		925992331D060AEC00EDCBF1 /* SimpleWallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925992321D060AEC00EDCBF1 /* SimpleWallUITests.swift */; };
+		928680F21DABCC3B001611FC /* SWAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928680F11DABCC3B001611FC /* SWAuthor.swift */; };
+		928680F41DABCCAC001611FC /* SWImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928680F31DABCCAC001611FC /* SWImage.swift */; };
+		92A8DCBC1D076D38004C6DA3 /* WallInfos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A8DCBB1D076D38004C6DA3 /* WallInfos.xib */; };
+		92A8DCBE1D0770BA004C6DA3 /* SWWallInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8DCBD1D0770BA004C6DA3 /* SWWallInfosView.swift */; };
+		92A8DCC01D0778E3004C6DA3 /* SWWallDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8DCBF1D0778E3004C6DA3 /* SWWallDetailViewController.swift */; };
 		92B3E70A1D060FD000D28BDE /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3E7091D060FD000D28BDE /* UIColorExtensions.swift */; };
-		92B3E70E1D0615A100D28BDE /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3E70D1D0615A100D28BDE /* Wall.swift */; };
+		92B3E70E1D0615A100D28BDE /* SWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3E70D1D0615A100D28BDE /* SWall.swift */; };
 		92B3E7101D06194400D28BDE /* Constants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92B3E70F1D06194400D28BDE /* Constants.plist */; };
 		92B3E7121D0619C800D28BDE /* PropertyListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B3E7111D0619C800D28BDE /* PropertyListManager.swift */; };
 		92BB26BD1D061B8800C6B036 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BB26BC1D061B8800C6B036 /* APIManager.swift */; };
 		92BB26C01D062C3100C6B036 /* SWWallThumbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BB26BF1D062C3100C6B036 /* SWWallThumbCell.swift */; };
+		92FF18661DAD7EC000A78E7E /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FF18651DAD7EC000A78E7E /* UIViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,12 +64,18 @@
 		9259922E1D060AEC00EDCBF1 /* SimpleWallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleWallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		925992321D060AEC00EDCBF1 /* SimpleWallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWallUITests.swift; sourceTree = "<group>"; };
 		925992341D060AEC00EDCBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		928680F11DABCC3B001611FC /* SWAuthor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWAuthor.swift; sourceTree = "<group>"; };
+		928680F31DABCCAC001611FC /* SWImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWImage.swift; sourceTree = "<group>"; };
+		92A8DCBB1D076D38004C6DA3 /* WallInfos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WallInfos.xib; sourceTree = "<group>"; };
+		92A8DCBD1D0770BA004C6DA3 /* SWWallInfosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWWallInfosView.swift; sourceTree = "<group>"; };
+		92A8DCBF1D0778E3004C6DA3 /* SWWallDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWWallDetailViewController.swift; sourceTree = "<group>"; };
 		92B3E7091D060FD000D28BDE /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		92B3E70D1D0615A100D28BDE /* Wall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
+		92B3E70D1D0615A100D28BDE /* SWall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWall.swift; sourceTree = "<group>"; };
 		92B3E70F1D06194400D28BDE /* Constants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Constants.plist; sourceTree = "<group>"; };
 		92B3E7111D0619C800D28BDE /* PropertyListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListManager.swift; sourceTree = "<group>"; };
 		92BB26BC1D061B8800C6B036 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		92BB26BF1D062C3100C6B036 /* SWWallThumbCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWWallThumbCell.swift; sourceTree = "<group>"; };
+		92FF18651DAD7EC000A78E7E /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		EA9B894AB0C05D528BDAE9BF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +186,7 @@
 				92B3E7111D0619C800D28BDE /* PropertyListManager.swift */,
 				92B3E7091D060FD000D28BDE /* UIColorExtensions.swift */,
 				92BB26BC1D061B8800C6B036 /* APIManager.swift */,
+				92FF18651DAD7EC000A78E7E /* UIViewControllerExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -182,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				925992111D060AEC00EDCBF1 /* SWFlowViewController.swift */,
+				92A8DCBF1D0778E3004C6DA3 /* SWWallDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -189,7 +203,9 @@
 		92B3E70C1D06158100D28BDE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				92B3E70D1D0615A100D28BDE /* Wall.swift */,
+				92B3E70D1D0615A100D28BDE /* SWall.swift */,
+				928680F11DABCC3B001611FC /* SWAuthor.swift */,
+				928680F31DABCCAC001611FC /* SWImage.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -198,6 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				92BB26BF1D062C3100C6B036 /* SWWallThumbCell.swift */,
+				92A8DCBB1D076D38004C6DA3 /* WallInfos.xib */,
+				92A8DCBD1D0770BA004C6DA3 /* SWWallInfosView.swift */,
 			);
 			name = UIElement;
 			sourceTree = "<group>";
@@ -268,18 +286,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Anthony Da Cruz";
 				TargetAttributes = {
 					9259920B1D060AEC00EDCBF1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2KSK6YV8G7;
+						LastSwiftMigration = 0800;
 					};
 					925992221D060AEC00EDCBF1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 9259920B1D060AEC00EDCBF1;
 					};
 					9259922D1D060AEC00EDCBF1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 9259920B1D060AEC00EDCBF1;
 					};
 				};
@@ -309,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A8DCBC1D076D38004C6DA3 /* WallInfos.xib in Resources */,
 				9259921D1D060AEC00EDCBF1 /* LaunchScreen.storyboard in Resources */,
 				9259921A1D060AEC00EDCBF1 /* Assets.xcassets in Resources */,
 				92B3E7101D06194400D28BDE /* Constants.plist in Resources */,
@@ -386,13 +409,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				925992181D060AEC00EDCBF1 /* SimpleWall.xcdatamodeld in Sources */,
+				928680F41DABCCAC001611FC /* SWImage.swift in Sources */,
 				925992121D060AEC00EDCBF1 /* SWFlowViewController.swift in Sources */,
+				92FF18661DAD7EC000A78E7E /* UIViewControllerExtensions.swift in Sources */,
+				92A8DCC01D0778E3004C6DA3 /* SWWallDetailViewController.swift in Sources */,
 				92BB26C01D062C3100C6B036 /* SWWallThumbCell.swift in Sources */,
-				92B3E70E1D0615A100D28BDE /* Wall.swift in Sources */,
+				92B3E70E1D0615A100D28BDE /* SWall.swift in Sources */,
+				92A8DCBE1D0770BA004C6DA3 /* SWWallInfosView.swift in Sources */,
 				925992101D060AEC00EDCBF1 /* AppDelegate.swift in Sources */,
 				92B3E7121D0619C800D28BDE /* PropertyListManager.swift in Sources */,
 				92B3E70A1D060FD000D28BDE /* UIColorExtensions.swift in Sources */,
 				92BB26BD1D061B8800C6B036 /* APIManager.swift in Sources */,
+				928680F21DABCC3B001611FC /* SWAuthor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,8 +489,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -484,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -506,8 +536,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -523,9 +555,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -535,10 +568,12 @@
 			baseConfigurationReference = 52344BFCC15DFFF59F09620B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2KSK6YV8G7;
 				INFOPLIST_FILE = SimpleWall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.SimpleWall";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -547,10 +582,12 @@
 			baseConfigurationReference = EA9B894AB0C05D528BDAE9BF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2KSK6YV8G7;
 				INFOPLIST_FILE = SimpleWall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.SimpleWall";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -562,6 +599,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.SimpleWallTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleWall.app/SimpleWall";
 			};
 			name = Debug;
@@ -574,6 +612,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.SimpleWallTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleWall.app/SimpleWall";
 			};
 			name = Release;
@@ -585,6 +624,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.SimpleWallUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SimpleWall;
 			};
 			name = Debug;
@@ -596,6 +636,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anthony-dacruz.SimpleWallUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SimpleWall;
 			};
 			name = Release;

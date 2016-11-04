@@ -18,9 +18,11 @@ class SWWallThumbCell: UICollectionViewCell {
         
     }
     
-    func configureView(wall: Wall, size: Float){
-         let api = APIManager()
+    func configureView(_ wall: SWall){
         self.thumb.image = nil
-        self.thumb.nk_setImageWith(api.generateUrlForIdForSize(wall.id, width: Int32(size), height: Int32(size)))
+        if let thumb = wall.imageWall?.smallSizeUrl {
+            Nuke.loadImage(with: thumb, into: self.thumb)
+        }
+        
     }
 }
