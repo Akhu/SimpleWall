@@ -9,7 +9,7 @@ pod 'SWFrameButton'
 pod 'NVActivityIndicatorView'
 pod 'EasyAnimation'
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
-
+pod 'LTMorphingLabel'
 pod 'Alamofire', '~> 4.0'
 #pod 'ReachabilitySwift', :git => 'https://github.com/ashleymills/Reachability.swift'
 pod 'SwiftyJSON'

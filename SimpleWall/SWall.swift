@@ -29,12 +29,12 @@ class SWall {
         self.author = SWAuthor(fromJSON:json)
     }
     
-    static func getRecentPhotos(page:Int?, _ completion: @escaping (_ images: [SWall]?) -> Void) {
+    static func getPhotos(flowType orderBy:String = "latest", page:Int?, _ completion: @escaping (_ images: [SWall]?) -> Void) {
         let api = APIManager()
         
         var allImages:[SWall]?
         
-        let parameters: Parameters = ["page": page, "per_page": 15, ]
+        let parameters: Parameters = ["page": page, "per_page": 10, "order_by":orderBy]
         
         
         api.get("/photos",parameters:parameters, completion: { data in
@@ -53,6 +53,7 @@ class SWall {
             
         })
     }
+    
     
 //    func image () -> UIImage{
 //        let api = APIManager()

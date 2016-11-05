@@ -34,14 +34,15 @@ class SWWallDetailViewController: UIViewController, UIScrollViewDelegate {
         }
         
         self.loading(currentlyLoading: false)
-        self.progressLabel.text = "0%"
         
+        self.progressLabel.text = "0%"
         
         self.scrollView.minimumZoomScale = 1.0
         self.scrollView.maximumZoomScale = 6.0
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
 //        if let imageURL = self.wall?.imageWall?.fullSizeUrl {
 //            Nuke.loadImage(with: imageURL, into: self.wallImage)
 //        }
@@ -51,8 +52,7 @@ class SWWallDetailViewController: UIViewController, UIScrollViewDelegate {
         return self.wallImage
     }
     
-    @IBAction func actionButtonAction(_ sender: UIBarButtonItem) {
-        
+    @IBAction func actionDownload(_ sender: UIButton) {
         let alert = UIAlertController(title: "Action", message: "Save this image to your device", preferredStyle: UIAlertControllerStyle.actionSheet)
         
         let saveRawImageAction = UIAlertAction(title: "Save Raw Image", style: .default) { (action) in
@@ -82,9 +82,12 @@ class SWWallDetailViewController: UIViewController, UIScrollViewDelegate {
         
         alert.view.tintColor = UIColor.skyBlue()
         self.present(alert, animated: true, completion: nil)
-        
+    
     }
     
+    @IBAction func closeAction(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
     func downloadAndSaveImage(url:URL){
         print(url.absoluteString)
 
@@ -139,5 +142,10 @@ class SWWallDetailViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func infosButtonAction(_ sender: UIBarButtonItem) {
         
     }
-   
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+    }
 }

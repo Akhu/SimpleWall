@@ -27,22 +27,32 @@ class SWFlowViewController: UICollectionViewController, UICollectionViewDelegate
     
     var defaultHeightForItem:CGFloat = 200
     
+    var flowType = "lastest"
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        SWall.getRecentPhotos(page: page) { (images) in
-            if let walls = images {
-                self.walls = walls
-                self.collectionView?.reloadData()
-            }
-        }
+        self.refreshData()
         
         self.updateLayout(viewSize: (self.collectionView?.bounds.size)!)
 
         //print(self.sizeForItem)
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @IBAction func refreshAction(_ sender: UIBarButtonItem) {
+        self.refreshData()
+    }
+    
+    func refreshData() {
+        SWall.getPhotos(flowType: self.flowType, page: page) { (images) in
+            if let walls = images {
+                self.walls = walls
+                self.collectionView?.reloadData()
+            }
+        }
     }
     
     func updateLayout(viewSize size: CGSize) {
@@ -122,7 +132,7 @@ class SWFlowViewController: UICollectionViewController, UICollectionViewDelegate
         
         if indexPath.row == self.walls.count-1 {
             self.page = self.page+1
-            SWall.getRecentPhotos(page: self.page, { (nextImages) in
+            SWall.getPhotos(flowType: self.flowType, page: self.page, { (nextImages) in
                 for imageToAppend in nextImages! {
                     self.walls.append(imageToAppend)
                 }
