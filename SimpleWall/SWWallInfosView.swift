@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Nuke
 
 @objc protocol SWWallInfosViewDelegate{
     @objc optional func SWWallInfosViewDelegateTouched()
@@ -17,7 +18,24 @@ class SWWallInfosView: UIView {
     
     var view:UIView!
     
+    @IBOutlet weak var photographerProfilPicture: UIImageView!
+    
     @IBOutlet weak var delegate:NSObject?
+    
+    var author:SWAuthor? {
+        didSet {
+            if let author = self.author {
+                
+                if let profilImage = author.profilImage {
+                    Nuke.loadImage(with: profilImage, into: self.photographerProfilPicture)
+                }
+                
+                //name
+            
+            }
+            
+        }
+    }
     
     let nibName:String = "WallInfos"
     
@@ -25,13 +43,18 @@ class SWWallInfosView: UIView {
         super.init(frame: frame)
         
         xibSetup()
+        //self.photographerProfilPicture.round()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         xibSetup()
+        self.photographerProfilPicture.round()
+        self.round(roundValue: 10)
     }
+    
+    
     
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
@@ -53,6 +76,17 @@ class SWWallInfosView: UIView {
         }
     }
     
+    override func layoutSubviews()
+    {
+        super.layoutSubviews()
+        
+        let shadowPath = UIBezierPath(rect: bounds)
+        layer.masksToBounds = false
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
+        layer.shadowOpacity = 0.5
+        layer.shadowPath = shadowPath.cgPath
+    }
     
     func xibSetup(){
         view = loadViewFromNib()

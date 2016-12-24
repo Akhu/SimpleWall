@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E807FA1C7D24FE57130C6A1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358AD4EE5F70BB2D8318E803 /* Pods.framework */; };
+		920A74BF1E0E8EC6000BE351 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920A74BE1E0E8EC6000BE351 /* UIViewExtension.swift */; };
 		9231D6621DCE6DF2009466C2 /* SWPopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9231D6611DCE6DF2009466C2 /* SWPopularViewController.swift */; };
 		925992101D060AEC00EDCBF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9259920F1D060AEC00EDCBF1 /* AppDelegate.swift */; };
 		925992121D060AEC00EDCBF1 /* SWFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925992111D060AEC00EDCBF1 /* SWFlowViewController.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		358AD4EE5F70BB2D8318E803 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52344BFCC15DFFF59F09620B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		920A74BE1E0E8EC6000BE351 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		9231D6611DCE6DF2009466C2 /* SWPopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPopularViewController.swift; sourceTree = "<group>"; };
 		9259920C1D060AEC00EDCBF1 /* SimpleWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9259920F1D060AEC00EDCBF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				92B3E7111D0619C800D28BDE /* PropertyListManager.swift */,
 				92B3E7091D060FD000D28BDE /* UIColorExtensions.swift */,
 				92FF18651DAD7EC000A78E7E /* UIViewControllerExtensions.swift */,
+				920A74BE1E0E8EC6000BE351 /* UIViewExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				920A74BF1E0E8EC6000BE351 /* UIViewExtension.swift in Sources */,
 				925992181D060AEC00EDCBF1 /* SimpleWall.xcdatamodeld in Sources */,
 				928680F41DABCCAC001611FC /* SWImage.swift in Sources */,
 				925992121D060AEC00EDCBF1 /* SWFlowViewController.swift in Sources */,

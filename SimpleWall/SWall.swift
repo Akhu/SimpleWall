@@ -26,7 +26,7 @@ class SWall {
     convenience init(json: JSON) {
         self.init(id:json["id"].stringValue)
         self.imageWall = SWImage(fromJSON:json)
-        self.author = SWAuthor(fromJSON:json)
+        self.author = SWAuthor(fromJSON:json["user"])
     }
     
     static func getPhotos(flowType orderBy:String = "latest", page:Int?, _ completion: @escaping (_ images: [SWall]?) -> Void) {

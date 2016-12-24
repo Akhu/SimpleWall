@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWWallInfosView" customModule="SimpleWall" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWWallInfosView" customModule="SimpleWall" customModuleProvider="target">
+            <connections>
+                <outlet property="photographerProfilPicture" destination="KQp-so-bSc" id="OFh-b6-3M0"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="308"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lO2-3e-1hv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="308"/>
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Wce-GO-9ev">
-                        <frame key="frameInset"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="308"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeF-Ov-gkv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Photographer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QX9-2D-MRa">
-                                        <frame key="frameInset" minX="8" minY="8" width="359" height="13"/>
+                                        <rect key="frame" x="8" y="8" width="359" height="13"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KQp-so-bSc">
+                                        <rect key="frame" x="8" y="29" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1148085885" green="0.54691410100000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="NjG-yg-j79"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9fc-6Z-KQS">
-                                <frame key="frameInset" minY="119" width="375" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fc-6Z-KQS">
+                                <rect key="frame" x="0.0" y="119" width="375" height="189"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Picture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuz-I0-ARX">
-                                        <frame key="frameInset" minX="8" minY="8" width="288" height="13"/>
+                                        <rect key="frame" x="8" y="8" width="288" height="13"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,8 +60,15 @@
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9fc-6Z-KQS" firstAttribute="leading" secondItem="Wce-GO-9ev" secondAttribute="leading" id="4yS-cQ-HkS"/>
+                            <constraint firstAttribute="trailing" secondItem="YeF-Ov-gkv" secondAttribute="trailing" id="7lw-Xm-0zB"/>
                             <constraint firstAttribute="trailing" secondItem="YeF-Ov-gkv" secondAttribute="trailing" id="DNd-aO-WfW"/>
+                            <constraint firstAttribute="bottom" secondItem="9fc-6Z-KQS" secondAttribute="bottom" id="EE4-jV-wa6"/>
+                            <constraint firstItem="9fc-6Z-KQS" firstAttribute="top" secondItem="YeF-Ov-gkv" secondAttribute="bottom" constant="-1" id="FtY-2O-R3g"/>
                             <constraint firstItem="YeF-Ov-gkv" firstAttribute="leading" secondItem="Wce-GO-9ev" secondAttribute="leading" id="Zea-yF-Hok"/>
+                            <constraint firstItem="YeF-Ov-gkv" firstAttribute="leading" secondItem="Wce-GO-9ev" secondAttribute="leading" id="ZvO-q2-yss"/>
+                            <constraint firstItem="YeF-Ov-gkv" firstAttribute="top" secondItem="Wce-GO-9ev" secondAttribute="top" id="edj-12-vfr"/>
+                            <constraint firstAttribute="trailing" secondItem="9fc-6Z-KQS" secondAttribute="trailing" id="jmL-wW-m5m"/>
                             <constraint firstItem="YeF-Ov-gkv" firstAttribute="top" secondItem="Wce-GO-9ev" secondAttribute="top" id="wta-GO-oe6"/>
                         </constraints>
                     </view>

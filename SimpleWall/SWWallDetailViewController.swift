@@ -46,6 +46,8 @@ class SWWallDetailViewController: UIViewController, UIScrollViewDelegate {
 //        if let imageURL = self.wall?.imageWall?.fullSizeUrl {
 //            Nuke.loadImage(with: imageURL, into: self.wallImage)
 //        }
+        
+        self.wallInfo.author = self.wall?.author
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
