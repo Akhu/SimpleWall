@@ -20,7 +20,17 @@ class SWWallInfosView: UIView {
     
     @IBOutlet weak var photographerProfilPicture: UIImageView!
     
+    @IBOutlet weak var butProfile: UIButton!
+    @IBOutlet weak var butImage: UIButton!
+    
+    @IBOutlet weak var labPortfolio: UILabel!
+    
+    @IBOutlet weak var labName: UILabel!
+    
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var delegate:NSObject?
+    
+    @IBOutlet weak var viewContainer: UIView!
     
     var author:SWAuthor? {
         didSet {
@@ -28,6 +38,15 @@ class SWWallInfosView: UIView {
                 
                 if let profilImage = author.profilImage {
                     Nuke.loadImage(with: profilImage, into: self.photographerProfilPicture)
+                }
+                
+                if let name = author.name {
+                    self.labName.text = name
+                }
+                
+                if let portfolio = author.portfolioUrl {
+                    
+                    self.labPortfolio.text = portfolio.absoluteString
                 }
                 
                 //name
@@ -43,6 +62,10 @@ class SWWallInfosView: UIView {
         super.init(frame: frame)
         
         xibSetup()
+        self.butProfile.round(roundValue: 5)
+        self.photographerProfilPicture.round()
+        self.viewContainer.round(roundValue: 17)
+        //self.viewContainer.configureDropShadow()
         //self.photographerProfilPicture.round()
     }
     
@@ -50,8 +73,11 @@ class SWWallInfosView: UIView {
         super.init(coder: aDecoder)
         
         xibSetup()
-        self.photographerProfilPicture.round()
-        self.round(roundValue: 10)
+
+//        self.butProfile.round(roundValue: 5)
+//        self.photographerProfilPicture.round()
+//        self.viewContainer.round(roundValue: 50)
+//        self.viewContainer.configureDropShadow()
     }
     
     
@@ -79,13 +105,6 @@ class SWWallInfosView: UIView {
     override func layoutSubviews()
     {
         super.layoutSubviews()
-        
-        let shadowPath = UIBezierPath(rect: bounds)
-        layer.masksToBounds = false
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
-        layer.shadowOpacity = 0.5
-        layer.shadowPath = shadowPath.cgPath
     }
     
     func xibSetup(){

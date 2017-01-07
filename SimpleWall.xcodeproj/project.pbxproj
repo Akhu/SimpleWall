@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E807FA1C7D24FE57130C6A1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358AD4EE5F70BB2D8318E803 /* Pods.framework */; };
+		6BC865A1726B0CFA9750FA97 /* Pods_SimpleWall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD461754D7274C6D9736EFA /* Pods_SimpleWall.framework */; };
 		920A74BF1E0E8EC6000BE351 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920A74BE1E0E8EC6000BE351 /* UIViewExtension.swift */; };
 		9231D6621DCE6DF2009466C2 /* SWPopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9231D6611DCE6DF2009466C2 /* SWPopularViewController.swift */; };
 		925992101D060AEC00EDCBF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9259920F1D060AEC00EDCBF1 /* AppDelegate.swift */; };
@@ -50,8 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DEF96C83E2557ABDBE0FC5D /* Pods-SimpleWall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWall.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWall/Pods-SimpleWall.release.xcconfig"; sourceTree = "<group>"; };
 		358AD4EE5F70BB2D8318E803 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52344BFCC15DFFF59F09620B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7582AB45DE6D2F237F20EBA4 /* Pods-SimpleWall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleWall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleWall/Pods-SimpleWall.debug.xcconfig"; sourceTree = "<group>"; };
 		920A74BE1E0E8EC6000BE351 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		9231D6611DCE6DF2009466C2 /* SWPopularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWPopularViewController.swift; sourceTree = "<group>"; };
 		9259920C1D060AEC00EDCBF1 /* SimpleWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +81,7 @@
 		92BB26BC1D061B8800C6B036 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		92BB26BF1D062C3100C6B036 /* SWWallThumbCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWWallThumbCell.swift; sourceTree = "<group>"; };
 		92FF18651DAD7EC000A78E7E /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
-		EA9B894AB0C05D528BDAE9BF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		ECD461754D7274C6D9736EFA /* Pods_SimpleWall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleWall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E807FA1C7D24FE57130C6A1 /* Pods.framework in Frameworks */,
+				6BC865A1726B0CFA9750FA97 /* Pods_SimpleWall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,17 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				358AD4EE5F70BB2D8318E803 /* Pods.framework */,
+				ECD461754D7274C6D9736EFA /* Pods_SimpleWall.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		29EAA697832BA319DAE64FA5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				52344BFCC15DFFF59F09620B /* Pods.debug.xcconfig */,
-				EA9B894AB0C05D528BDAE9BF /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		925992031D060AEC00EDCBF1 = {
@@ -133,8 +126,8 @@
 				925992261D060AEC00EDCBF1 /* SimpleWallTests */,
 				925992311D060AEC00EDCBF1 /* SimpleWallUITests */,
 				9259920D1D060AEC00EDCBF1 /* Products */,
-				29EAA697832BA319DAE64FA5 /* Pods */,
 				0E8A12C2F18B4C1461A4C541 /* Frameworks */,
+				BD4F22320B68E7A9027562FD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +219,15 @@
 			name = UIElement;
 			sourceTree = "<group>";
 		};
+		BD4F22320B68E7A9027562FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7582AB45DE6D2F237F20EBA4 /* Pods-SimpleWall.debug.xcconfig */,
+				1DEF96C83E2557ABDBE0FC5D /* Pods-SimpleWall.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,12 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 925992371D060AEC00EDCBF1 /* Build configuration list for PBXNativeTarget "SimpleWall" */;
 			buildPhases = (
-				969ED9D1144250E9263746A9 /* Check Pods Manifest.lock */,
+				30131EBA5BF7313DF802700C /* [CP] Check Pods Manifest.lock */,
 				925992081D060AEC00EDCBF1 /* Sources */,
 				925992091D060AEC00EDCBF1 /* Frameworks */,
 				9259920A1D060AEC00EDCBF1 /* Resources */,
-				1D10DDBADBEC85D3F4F79A19 /* Embed Pods Frameworks */,
-				3509AFF98748484F06586269 /* Copy Pods Resources */,
+				DCA818AAD64E48AC0B085949 /* [CP] Embed Pods Frameworks */,
+				F7A3132DDE5C399644A169A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,49 +364,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1D10DDBADBEC85D3F4F79A19 /* Embed Pods Frameworks */ = {
+		30131EBA5BF7313DF802700C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3509AFF98748484F06586269 /* Copy Pods Resources */ = {
+		DCA818AAD64E48AC0B085949 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleWall/Pods-SimpleWall-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		969ED9D1144250E9263746A9 /* Check Pods Manifest.lock */ = {
+		F7A3132DDE5C399644A169A0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleWall/Pods-SimpleWall-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -573,7 +575,7 @@
 		};
 		925992381D060AEC00EDCBF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52344BFCC15DFFF59F09620B /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 7582AB45DE6D2F237F20EBA4 /* Pods-SimpleWall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2KSK6YV8G7;
@@ -587,7 +589,7 @@
 		};
 		925992391D060AEC00EDCBF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA9B894AB0C05D528BDAE9BF /* Pods.release.xcconfig */;
+			baseConfigurationReference = 1DEF96C83E2557ABDBE0FC5D /* Pods-SimpleWall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2KSK6YV8G7;

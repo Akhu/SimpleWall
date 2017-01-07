@@ -9,6 +9,7 @@
 import UIKit
 import Nuke
 import Alamofire
+import SwiftMessages
 
 class SWWallDetailViewController: UIViewController, UIScrollViewDelegate {
 
@@ -22,6 +23,7 @@ class SWWallDetailViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var wallInfo: SWWallInfosView!
     
+    @IBOutlet weak var butShowInfos: UIButton!
     @IBOutlet weak var loaderView: UIView!
     
     @IBOutlet weak var progressBarDownload: UIProgressView!
@@ -47,11 +49,23 @@ class SWWallDetailViewController: UIViewController, UIScrollViewDelegate {
 //            Nuke.loadImage(with: imageURL, into: self.wallImage)
 //        }
         
-        self.wallInfo.author = self.wall?.author
+        //self.wallInfo.author = self.wall?.author
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.wallImage
+    }
+    
+    @IBAction func actionShowInfos(_ sender: Any) {
+        var config = SwiftMessages.Config()
+        config.dimMode = .gray(interactive: true)
+        config.presentationStyle = .top
+        config.duration = .forever
+        
+        let view = SWWallInfosView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 300))
+        view.author = self.wall?.author
+        
+        SwiftMessages.show(config: config, view: view)
     }
     
     @IBAction func actionDownload(_ sender: UIButton) {
