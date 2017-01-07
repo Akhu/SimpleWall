@@ -24,7 +24,7 @@ class SWAuthor {
         self.name = fromJSON["name"].stringValue
         self.username = fromJSON["username"].stringValue
         self.portfolioUrl = URL(string:fromJSON["portfolio_url"].stringValue)
-        self.profilImage = URL(string: fromJSON["profile_image"]["small"].stringValue)
+        self.profilImage = URL(string: fromJSON["profile_image"]["large"].stringValue)
     }
 }
 //
