@@ -32,6 +32,8 @@ class SWWallInfosView: UIView {
     
     @IBOutlet weak var viewContainer: UIView!
     
+    var imageUrl:URL?
+    
     var author:SWAuthor? {
         didSet {
             if let author = self.author {
@@ -47,6 +49,7 @@ class SWWallInfosView: UIView {
                 if let portfolio = author.portfolioUrl {
                     
                     self.labPortfolio.text = portfolio.absoluteString
+                    self.labPortfolio.isHidden = false
                 }
                 
                 //name
@@ -64,7 +67,7 @@ class SWWallInfosView: UIView {
         xibSetup()
         self.butProfile.round(roundValue: 5)
         self.photographerProfilPicture.round()
-        self.viewContainer.round(roundValue: 17)
+        self.viewContainer.round(roundValue: 13)
         //self.viewContainer.configureDropShadow()
         //self.photographerProfilPicture.round()
     }
@@ -80,7 +83,17 @@ class SWWallInfosView: UIView {
 //        self.viewContainer.configureDropShadow()
     }
     
+    @IBAction func actionGoProfile(_ sender: UIButton) {
+        if let profilUrl = self.author?.profilUrl {
+            UIApplication.shared.openURL(profilUrl)
+        }
+    }
     
+    @IBAction func actionGoImage(_ sender: UIButton) {
+        if let imageUrl = self.imageUrl {
+            //UIApplication.shared.openURL(profilUrl)
+        }
+    }
     
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {

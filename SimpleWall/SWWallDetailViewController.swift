@@ -64,6 +64,7 @@ class SWWallDetailViewController: UIViewController, UIScrollViewDelegate {
         
         let view = SWWallInfosView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 300))
         view.author = self.wall?.author
+        //view.imageUrl = self.wall?.imageWall.url
         
         SwiftMessages.show(config: config, view: view)
     }

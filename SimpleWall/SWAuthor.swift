@@ -16,6 +16,7 @@ class SWAuthor {
     var name:String?
     var portfolioUrl:URL?
     var profilImage:URL?
+    var profilUrl:URL?
  
     
     convenience init(fromJSON: JSON) {
@@ -25,6 +26,7 @@ class SWAuthor {
         self.username = fromJSON["username"].stringValue
         self.portfolioUrl = URL(string:fromJSON["portfolio_url"].stringValue)
         self.profilImage = URL(string: fromJSON["profile_image"]["large"].stringValue)
+        self.profilUrl = URL(string: fromJSON["links"]["html"].stringValue)
     }
 }
 //
